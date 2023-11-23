@@ -13,8 +13,6 @@ def main():
 
             if diff in difference:
                 pairs += difference[diff]
-
-            if diff in difference:
                 difference[diff] += 1
             else:
                 difference[diff] = 1
