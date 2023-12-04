@@ -1,13 +1,13 @@
 def main():
-	year = int(input())
+	y = int(input())
 	
 	while True:
-		a = str(year + 1)
+		y += 1
+		a = str(y)
+
 		if len(set(a)) == len(a):
 			print(a)
 			break
 	
-		year += 1
-
 if __name__ == '__main__':
 	main()
