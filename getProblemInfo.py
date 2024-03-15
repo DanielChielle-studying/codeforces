@@ -6,9 +6,10 @@ from bs4 import BeautifulSoup
 
 CODEFORCES_URL = "https://codeforces.com/problemset/problem/{}/{}"
 
-def get_info():
+def get_info(problem_code):
     """Retrieve problem information from Codeforces."""
-    problem_code = get_problem_code()
+    print(problem_code)
+    # problem_code = get_problem_code()
     if problem_code:
         link = CODEFORCES_URL.format(problem_code[:-1], problem_code[-1])
         title, difficulty, statement = extract_problem_info(link)
